@@ -1,0 +1,18 @@
+.boxmodel{
+    border: solid red 2px;
+    display: inline-block;
+    /* padding: 15px; */
+    padding: 5px 20px 5px 20px;
+    margin: 0px 20px;
+    height: 33px;
+    width: 33px;
+}
+
+p{
+    font-size: 20px;
+
+}
+
+span{
+    font-size: 5em; /* 5 times 20px ,rem is based on root*/
+}

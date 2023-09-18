@@ -1,0 +1,48 @@
+/* selector{
+    property:value;
+} */
+
+*{
+    text-align: right;
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/KeLQtlA.jpg);
+    background-size: cover;
+}
+h2,p {
+    color : green;
+    text-align: center;
+    border: dashed palevioletred;
+    cursor: pointer;
+}
+
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext{
+    border : 2px dashed blue;
+}
+
+.active{
+    color: red;
+    font-family: 'Poiret One', cursive;
+}
+
+#div1{
+    font-style: italic;
+}
+#div2{
+    font-size: x-large;
+}
+
+img{
+    float: left;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+}

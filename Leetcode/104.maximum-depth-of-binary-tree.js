@@ -18,24 +18,14 @@
  * @return {number}
  */
 
-var maxDepth = function (root) {
-    const dfs = (node, total, level, seen) => {
-        if (node) {
-            if (!seen.has(level)) {
-                seen.add(level)
-                total++
-            }
-            if (node.left) {
-                total = dfs(node.left, total, level + 1, seen)
-            }
-            if (node.right) {
-                total = dfs(node.right, total, level + 1, seen)
-            }
-        }
-        return total
+var maxDepth = function (node, currentDepth = 0) {
+    if (!node) {
+        return currentDepth;
     }
 
-    return dfs(root, 0, 0, new Set())
+    currentDepth++;
+
+    return Math.max(maxDepth(node.right, currentDepth), maxDepth(node.left, currentDepth));
 };
 // @lc code=end
 
